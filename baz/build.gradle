@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.1'
+
+repositories {
+    maven {
+        name = 'myRepo'
+        url = rootProject.layout.projectDirectory.dir("maven_repo")
+    }
+}
+
+dependencies {
+    implementation("org.example:foo:1.0") // foo depends on bar
+    implementation(project(":bar")) // bar is constrained to same-version foo
+}

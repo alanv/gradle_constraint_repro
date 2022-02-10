@@ -1,0 +1,4 @@
+rootProject.name = 'constraint_repro'
+include 'foo'
+include 'bar'
+include 'baz'

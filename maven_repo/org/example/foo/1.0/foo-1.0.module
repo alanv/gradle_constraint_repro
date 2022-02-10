@@ -1,0 +1,69 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.example",
+    "module": "foo",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "foo-1.0.jar",
+          "url": "foo-1.0.jar",
+          "size": 903,
+          "sha512": "843c7bce4824e93ef26cf906b86daf704e3fcf61a7febb4895b14162251cc0c0a3e2d449a0df915761c20dd94e392466407a6e4cb2d58269b3f42cedbae8e1cd",
+          "sha256": "8e0d6b420cd1ab5721735d53ee92e77a0b2e86a893f3c7dba31993f8af8c0d99",
+          "sha1": "c12d68d43cb329831d7f72214863031a1c080888",
+          "md5": "0128acb2fe9dc1bba5a808c7c486210d"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.example",
+          "module": "bar",
+          "version": {
+            "requires": "1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "foo-1.0.jar",
+          "url": "foo-1.0.jar",
+          "size": 903,
+          "sha512": "843c7bce4824e93ef26cf906b86daf704e3fcf61a7febb4895b14162251cc0c0a3e2d449a0df915761c20dd94e392466407a6e4cb2d58269b3f42cedbae8e1cd",
+          "sha256": "8e0d6b420cd1ab5721735d53ee92e77a0b2e86a893f3c7dba31993f8af8c0d99",
+          "sha1": "c12d68d43cb329831d7f72214863031a1c080888",
+          "md5": "0128acb2fe9dc1bba5a808c7c486210d"
+        }
+      ]
+    }
+  ]
+}
